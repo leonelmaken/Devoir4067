@@ -1,4 +1,4 @@
-public class ProduitFactory {
+public class ProduitFactory2 {
 
     public static final int TYPE_PRODUITA1 = 1;
     public static final int TYPE_PRODUITA2 = 2;

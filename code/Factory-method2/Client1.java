@@ -1,4 +1,4 @@
-public class Client {
+public class Client1 {
 
     public static void main(String[] args) {
         ProduitFactory produitFactory1 = new ProduitFactory1();
