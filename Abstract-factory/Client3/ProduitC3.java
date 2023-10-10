@@ -1,4 +1,4 @@
-import construction.abstractFactory.ProduitC;
+
 
 public class ProduitC3 extends ProduitC{
 

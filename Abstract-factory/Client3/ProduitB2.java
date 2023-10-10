@@ -1,4 +1,4 @@
-import construction.abstractFactory.produitB;
+
 
 public class ProduitB2 extends ProduitB{
 
