@@ -1,4 +1,4 @@
-public class Client {
+public class Client1 {
 
     public static void main(String[] args) {
         ProduitFactory produitFactory1 = new ProduitFactory1();
@@ -15,8 +15,10 @@ public class Client {
         produitA = produitFactory2.getProduitA();
         produitA.methodeA();
 
+
         System.out.println("Utilisation de la troisième fabrique");
         produitA = produitFactory3.getProduitA();
         produitA.methodeA();
+     
     }
 }
