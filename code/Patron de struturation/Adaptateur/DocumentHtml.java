@@ -4,7 +4,7 @@ public class DocumentHtml implements Document {
     private String contenu;
 
     @Override
-    public int setContenu(String contenu) {
+    public int setContenu() {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Veuillez entrer le contenu du document HTML  : ");
         

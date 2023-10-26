@@ -1,5 +1,5 @@
 public interface Document {
-    int setContenu(String contenu);
+    int setContenu();
     int dessine();
     int imprime();
 }
