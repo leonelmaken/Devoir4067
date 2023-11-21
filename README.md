@@ -38,7 +38,7 @@ Les participants :
     fournir des objets de type Produit
 
  Singleton :
-    princepes : 
+    principes : 
      - L’objectif du pattern SINGLETON est de garantir qu’une classe ne
        possède qu’une seule instance et de fournir un point d’accès global à
        celle-ci.
