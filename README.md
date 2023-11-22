@@ -1,5 +1,5 @@
 # Devoir4067
-premier exercice sur le patron de construction "factory method"
+**premier exercice sur le patron de construction "factory method"**
 
 factory method :
 principes :
@@ -38,7 +38,7 @@ Les participants :
     fournir des objets de type Produit
 
  Singleton :
-    princepes : 
+    principes : 
      - L’objectif du pattern SINGLETON est de garantir qu’une classe ne
        possède qu’une seule instance et de fournir un point d’accès global à
        celle-ci.
@@ -67,8 +67,103 @@ le Bluider :
 
       - MonteurConcret : construit et assemble des parties du produit
         par implémentation des méthodes du MonteurAbstrait  
-
       - Directeur : construit un objet en utilisant l’interface du Monteur
 
       - Produit : représente l’objet complexe en cours de construction
 L'implémentation de chaque patron de construction se trouve dans le dossier code et la présentation de chaque patron dans le dossier models      
+
+**Deuxième execice "les patrons de structurations"**
+****L'Adapter ****:
+
+• Son but est de convertir l’interface d’une classe existante en un
+  autre attendue par le client également existants afin qu’ils
+  puissent travailler ensemble.
+  
+• Il s’agit de confier à une classe existante une nouvelle interface
+  pour répondre aux besoins de clients.
+  
+• Convertir l’interface d’une classe en une autre conforme à
+  l’attente d’un client.
+  
+• Permettre la collaboration d’instances dont les classes ont des
+  interfaces incompatibles.
+
+Les participants :
+
+• Interface : introduit la signature des méthodes de l’objet
+• Client : programme ou classe qui interagit avec les objets
+  répondant à interface
+• Adaptateur : implémente les méthodes de Interface en
+  invoquant les méthodes de l’objet adapte
+• Adapte : l’objet dont l’interface doit être adaptée pour
+  correspondre a Interface.
+
+**Le patron composite** :
+
+• Il permet de combiner des objets en structures plus grandes.
+• Il décrit une façon de traiter de la même manière les objets
+  simples et les objets composites .
+• Composer des objets dans des structures arborescentes pour
+  représenter des hiérarchies composants/composés
+• Permet au client de manipuler uniformément les objets simples et
+  les objets au sein de leurs compositions.
+
+Les participants:
+
+• Component
+  – déclare l’interface commune à tous les objets
+  – déclare le comportement par défaut pour toutes les classes
+• Leaf : représente une feuille
+  – Implémente le comportement élémentaire
+• Composite : définit le comportement des composants ayant des
+  fils, stocke les fils et implémente les opérations nécessaires à leur
+  gestion.
+• Client : utilise l’interface component
+  – Si le receveur est une feuille la requête est directement traitée
+  – Sinon le composite retransmet la requête à ses fils.
+
+**Le patron Bridge** :
+
+• Il permet de découpler l’interface d’une classe et son
+  implémentation.
+• Ceci permet à l’interface et l’implémentation de varier
+  séparément.
+• Utilise la règle : préférez la composition à l’héritage?.
+
+Les participants :
+
+• Abstraction : définit l’interface de l’abstraction; gère une référence
+  à un objet de type implémentation.
+• RefineAbstration : enrichit l’interface définie par l’abstraction pour
+  constituer une classe concrète
+• Implementor : définit l’interface commune pour toutes les
+  implémentations concrètes. En général elle définit des opérations
+  primitives
+• ConcreteImplementor : réalise concrètement l’implémentation de
+  l’interface.
+• bridge : lien d’association qui fait le pont entre l’abstraction et
+  l’implémentation.
+
+**Le patron Decorator** :
+
+• Attacher dynamiquement des fonctionnalités supplémentaires à
+  un objet.
+• L’ajout se fait dynamiquement à l’exécution
+• Cet ajout de fonctionnalités ne modifie pas l’interface de l’objet
+• L’ajout reste transparent vis-à-vis des clients.
+• il offre une alternative assez souple à l’héritage pour composer de
+  nouvelles fonctionnalités.
+
+Les participants :
+
+• ComposantAbstrait : déclare l’interface commune pour les
+  décorateurs et les objets décorés.
+• ComposantConcret : la classe qui définit les objets initiaux auxquels
+  de nouvelles fonctionnalités doivent être ajoutées.
+• Decorateur composant: classe abstraite ayant une référence vers un
+• DecorateurConcretA et DecorateurConcretB : définissent des
+  comportement supplémentaires pouvant être ajoutés dynamiquement aux composants.
+• Client : utilise le décorateur pour l’ajout dynamique des
+  fnctionnalités.  
+
+Les codes de ces différents patrons se retrouvent dans le dossiers codes/patrons de structuration et les modeles dans le dossiers modèles/patrons de structurations.
